@@ -1,0 +1,380 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: hsl(30, 38%, 92%);
+}
+
+#preview-card-container {
+    width: 614px;
+    height: 440px;
+}
+
+#preview-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    border-radius: 12px;
+    align-items: center;
+}
+
+#text-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 8px;
+}
+
+#card-img-container {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/image-product-desktop.jpg);
+    background-size: cover;
+    border-radius: 12px 0px 0px 12px;
+}
+
+#card-text-container {
+    width: 80%;
+}
+
+#product-type {
+    font-family: Montserrat;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.8rem;
+    letter-spacing: 0.4rem;
+    margin: 20px 0;
+}
+
+#product-name {
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+    margin: 18px 0;
+    width: 80%;
+}
+
+#product-description {
+    font-family: Montserrat;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    width: 100%;
+    letter-spacing: 0.025rem;
+    margin-bottom: 6px;
+}
+
+#card-price-container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+#card-price {
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: hsl(158, 36%, 37%);
+    margin: 18px 12px 30px 0;
+}
+
+#discounted-price {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+#card-button-container {
+    width: 80%;
+}
+
+button {
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    border: 0px;
+    border-radius: 4px;
+    height: 2.7rem;
+    margin-bottom: 10px;
+}
+
+@media (width < 321px) {
+    #preview-card-container {
+        width: 90%;
+        height: 60%;
+    }
+
+    #preview-card {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        border-radius: 12px;
+        align-items: center;
+    }
+
+    #card-img-container {
+        width: 100%;
+        height: 33%;
+        background-image: url(images/image-product-mobile.jpg);
+        background-size: cover;
+        border-radius: 12px 12px 0px 0px;
+    }
+
+    #card-text-container {
+        width: 90%;
+    }
+
+    #product-type {
+        font-family: Montserrat;
+        font-weight: 500;
+        color: hsl(228, 12%, 48%);
+        font-size: 0.8rem;
+        letter-spacing: 0.4rem;
+        margin: 25px 0 0 0;
+    }
+
+    #product-name {
+        font-family: Fraunces;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 1.9rem;
+        margin: 18px 0;
+    }
+
+    #product-description {
+        font-family: Montserrat;
+        font-weight: 500;
+        color: hsl(228, 12%, 48%);
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        margin: 0;
+    }
+
+    #card-price-container {
+        display: flex;
+        align-items: center;
+        width: 90%;
+    }
+
+    #card-price {
+        font-family: Fraunces;
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: hsl(158, 36%, 37%);
+        margin: 18px 12px 18px 0;
+    }
+
+    #discounted-price {
+        color: hsl(228, 12%, 48%);
+        text-decoration: line-through;
+    }
+
+    #card-button-container{
+        width: 90%;
+    }
+
+    button {
+        width: 100%;
+        font-family: Montserrat;
+        font-size: 1rem;
+        font-weight: 500;
+        color: white;
+        background-color: hsl(158, 36%, 37%);
+        border: 0px;
+        border-radius: 4px;
+        height: 2.7rem;
+    }
+}
+
+@media (320px < width < 376px) {
+    #preview-card-container {
+        width: 90%;
+        height: 500px;
+    }
+
+    #preview-card {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        border-radius: 12px;
+        align-items: center;
+    }
+
+    #card-img-container {
+        width: 100%;
+        height: 33%;
+        background-image: url(images/image-product-mobile.jpg);
+        background-size: cover;
+        border-radius: 12px 12px 0px 0px;
+    }
+
+    #card-text-container {
+        width: 90%;
+    }
+
+    #product-type {
+        font-family: Montserrat;
+        font-weight: 500;
+        color: hsl(228, 12%, 48%);
+        font-size: 0.8rem;
+        letter-spacing: 0.4rem;
+        margin: 25px 0 0 0;
+    }
+
+    #product-name {
+        font-family: Fraunces;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 1.9rem;
+        margin: 18px 0;
+    }
+
+    #product-description {
+        font-family: Montserrat;
+        font-weight: 500;
+        color: hsl(228, 12%, 48%);
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        margin: 0;
+    }
+
+    #card-price-container {
+        display: flex;
+        align-items: center;
+        width: 90%;
+    }
+
+    #card-price {
+        font-family: Fraunces;
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: hsl(158, 36%, 37%);
+        margin: 18px 12px 18px 0;
+    }
+
+    #discounted-price {
+        color: hsl(228, 12%, 48%);
+        text-decoration: line-through;
+    }
+
+    #card-button-container {
+        width: 90%;
+    }
+
+    button {
+        width: 100%;
+        font-family: Montserrat;
+        font-size: 1rem;
+        font-weight: 500;
+        color: white;
+        background-color: hsl(158, 36%, 37%);
+        border: 0px;
+        border-radius: 4px;
+        height: 2.7rem;
+    }
+}
+
+@media (375px < width < 426px) {
+    #preview-card-container {
+        width: 90%;
+        height: 500px;
+    }
+
+    #preview-card {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        border-radius: 12px;
+        align-items: center;
+    }
+
+    #card-img-container {
+        width: 100%;
+        height: 33%;
+        background-image: url(images/image-product-mobile.jpg);
+        background-size: cover;
+        border-radius: 12px 12px 0px 0px;
+    }
+
+    #card-text-container {
+        width: 90%;
+    }
+
+    #product-type {
+        font-family: Montserrat;
+        font-weight: 500;
+        color: hsl(228, 12%, 48%);
+        font-size: 0.8rem;
+        letter-spacing: 0.4rem;
+        margin: 25px 0 0 0;
+    }
+
+    #product-name {
+        font-family: Fraunces;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 1.9rem;
+        margin: 18px 0;
+    }
+
+    #product-description {
+        font-family: Montserrat;
+        font-weight: 500;
+        color: hsl(228, 12%, 48%);
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        margin: 0;
+    }
+
+    #card-price-container {
+        display: flex;
+        align-items: center;
+        width: 90%;
+    }
+
+    #card-price {
+        font-family: Fraunces;
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: hsl(158, 36%, 37%);
+        margin: 18px 12px 18px 0;
+    }
+
+    #discounted-price {
+        color: hsl(228, 12%, 48%);
+        text-decoration: line-through;
+    }
+
+    #card-button-container {
+        width: 90%;
+    }
+
+    button {
+        width: 100%;
+        font-family: Montserrat;
+        font-size: 1rem;
+        font-weight: 500;
+        color: white;
+        background-color: hsl(158, 36%, 37%);
+        border: 0px;
+        border-radius: 4px;
+        height: 2.7rem;
+    }
+}
